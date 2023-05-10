@@ -1,8 +1,11 @@
-import React from 'react'
+import React , {useContext} from 'react'
+import { VotingContext } from '../../App'
+
 
 const Navbar = () => {
+  const {creator} = useContext(VotingContext)
   return (
-    <div>Navbar</div>
+    <div>Hello {creator}</div>
   )
 }
 
